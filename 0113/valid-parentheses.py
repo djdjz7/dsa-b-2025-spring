@@ -1,15 +1,12 @@
 # https://leetcode.cn/problems/valid-parentheses/
 
+
 class Solution:
     def isValid(self, s: str) -> bool:
         a = []
-        d:dict = {
-            ')': '(',
-            ']': '[',
-            '}': '{'
-        }
+        d: dict = {")": "(", "]": "[", "}": "{"}
         for x in s:
-            if x == '(' or x == '[' or x == '{':
+            if x == "(" or x == "[" or x == "{":
                 a.append(x)
             else:
                 c = d.get(x)
@@ -19,4 +16,3 @@ class Solution:
         if a:
             return False
         return True
-        

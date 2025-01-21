@@ -1,6 +1,6 @@
 # http://cs101.openjudge.cn/practice/24588/
 
-op_dic = '+-*/'
+op_dic = "+-*/"
 sets = int(input())
 
 for _ in range(sets):
@@ -11,15 +11,15 @@ for _ in range(sets):
         if token in op_dic:
             n2 = stack.pop()
             n1 = stack.pop()
-            if token == '+':
+            if token == "+":
                 stack.append(n1 + n2)
-            elif token == '-':
+            elif token == "-":
                 stack.append(n1 - n2)
-            elif token == '*':
+            elif token == "*":
                 stack.append(n1 * n2)
-            elif token == '/':
+            elif token == "/":
                 stack.append(n1 / n2)
         else:
             stack.append(int(token))
 
-    print(f'{stack[0]:.2f}')
+    print(f"{stack[0]:.2f}")

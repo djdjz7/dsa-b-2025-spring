@@ -1,16 +1,18 @@
 # http://cs101.openjudge.cn/practice/solution/48100830/
 
+
 class Fraction:
     up: int
     down: int
+
     def __init__(self, up: int, down: int):
         self.up = up
         self.down = down
 
     def __str__(self):
         return f"{self.up}/{self.down}"
-    
-    def __add__(self, another: 'Fraction'):
+
+    def __add__(self, another: "Fraction"):
         up = self.up * another.down + self.down * another.up
         down = self.down * another.down
         a = up

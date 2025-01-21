@@ -1,7 +1,7 @@
 # https://sunnywhy.com/sfbj/7/1/293
 
 top = 0
-stack = [''] * 100
+stack = [""] * 100
 n = int(input())
 for i in range(n):
     cmd = input().split()

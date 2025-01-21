@@ -8,4 +8,4 @@ while deci:
     deci //= 8
 
 while stack:
-    print(stack.pop(), end='')
+    print(stack.pop(), end="")

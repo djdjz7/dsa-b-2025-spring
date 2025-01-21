@@ -5,8 +5,10 @@ from collections import deque
 while True:
     try:
         num = input().strip()
-        if not num: break
-    except: break
+        if not num:
+            break
+    except:
+        break
 
     _deq = deque()
     _stack = []
@@ -18,7 +20,7 @@ while True:
 
     for _ in range(length):
         if _deq.popleft() != _stack.pop():
-            print('NO')
+            print("NO")
             break
     else:
-        print('YES')
+        print("YES")

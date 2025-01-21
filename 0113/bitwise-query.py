@@ -7,11 +7,11 @@ for i in range(steps):
     inp = input().split()
     cmd = inp[0]
     num = int(inp[1])
-    if cmd == 'C':
+    if cmd == "C":
         nums = list(map(lambda x: x + num, nums))
     else:
         result = 0
         for x in nums:
-            if  x >> num & 1:
+            if x >> num & 1:
                 result += 1
         print(result)

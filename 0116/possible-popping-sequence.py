@@ -2,6 +2,7 @@
 
 from typing import List
 
+
 def enumerate(next_in: int, current_stack: List[int], n: int) -> List[List[int]]:
     if next_in > n:
         current_stack.reverse()
@@ -18,7 +19,8 @@ def enumerate(next_in: int, current_stack: List[int], n: int) -> List[List[int]]
     result.extend(enumerate(next_in + 1, cache, n))
     return result
 
+
 n = int(input())
 result = enumerate(1, [], n)
-for x in map(lambda x: ' '.join(map(str, x)), result):
+for x in map(lambda x: " ".join(map(str, x)), result):
     print(x)
