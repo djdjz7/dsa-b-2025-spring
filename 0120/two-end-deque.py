@@ -16,11 +16,13 @@ for _ in range(sets):
         else:
             if arg == 0:
                 l += 1
-                if l > r: l = r
+                if l > r:
+                    l = r
             else:
                 r -= 1
-                if r < l: r = l
+                if r < l:
+                    r = l
     if r <= l:
         print("NULL")
     else:
-        print(' '.join(map(str, deque[l:r])))
+        print(" ".join(map(str, deque[l:r])))
