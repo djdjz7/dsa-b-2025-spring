@@ -2,10 +2,12 @@
 
 from collections import deque
 
+
 class GroupQueue:
     def __init__(self, index, inital):
         self.index = index
         self.queue = deque([inital])
+
 
 group_cnt = int(input())
 members = [-1] * 1000000
@@ -19,9 +21,12 @@ queue = deque()
 while True:
     try:
         cmd = input().split()
-        if not cmd: break
-    except: break
-    if cmd[0] == "STOP": break
+        if not cmd:
+            break
+    except:
+        break
+    if cmd[0] == "STOP":
+        break
     if cmd[0] == "DEQUEUE":
         if type(queue[0]) == GroupQueue:
             print(queue[0].queue.popleft())

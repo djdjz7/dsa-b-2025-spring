@@ -3,6 +3,7 @@
 arr = []
 answer = 0
 
+
 def merge_sort(l: int, r: int):
     global answer
     ll = l
@@ -15,7 +16,8 @@ def merge_sort(l: int, r: int):
             arr[l], arr[l + 1] = arr[l + 1], arr[l]
         return
     mid = (l + r) // 2
-    merge_sort(l, mid); merge_sort(mid, r)
+    merge_sort(l, mid)
+    merge_sort(mid, r)
     lmid = mid
     merged = []
     while l < lmid and mid < r:
@@ -34,6 +36,7 @@ def merge_sort(l: int, r: int):
         mid += 1
     for i in range(ll, rr):
         arr[i] = merged[i - ll]
+
 
 n = int(input())
 while n:

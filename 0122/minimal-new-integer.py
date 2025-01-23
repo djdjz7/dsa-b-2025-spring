@@ -12,4 +12,4 @@ while sets:
             k -= 1
             output.pop()
         output.append(ch)
-    print(''.join(output[:len(output) - k]))
+    print("".join(output[: len(output) - k]))
