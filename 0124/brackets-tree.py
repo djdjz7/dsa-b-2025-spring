@@ -1,40 +1,47 @@
-# http://cs101.openjudge.cn/practice/24729/
-
-from typing import Optional, List
+# http://cs101.openjudge.cn/25dsapre/27637/
 
 
 class TreeNode:
-    def __init__(self, value: str):
-        self.value = value
-        self.children = list()
+    def __init__(self, val):
+        self.val = val
+        self.left = None
+        self.right = None
 
 
-stack: List[TreeNode] = []
-level = 0
-data = input()
-for x in data:
-    if x == "(":
-        level += 1
-    elif x == ")":
-        level -= 1
-    elif x == ",":
-        continue
-    else:
-        while len(stack) > level:
-            stack.pop()
-        new_node = TreeNode(x)
-        if stack:
-            stack[-1].children.append(new_node)
-        stack.append(new_node)
+def preorder(root: TreeNode) -> str:
+    if root == None or root.val == "*":
+        return ""
+    return root.val + preorder(root.left) + preorder(root.right)
 
 
-def preoder(root: TreeNode) -> str:
-    return root.value + "".join(map(preoder, root.children))
+def inorder(root: TreeNode) -> str:
+    if root == None or root.val == "*":
+        return ""
+    return inorder(root.left) + root.val + inorder(root.right)
 
 
-def postorder(root: TreeNode) -> str:
-    return "".join(map(postorder, root.children)) + root.value
-
-
-print(preoder(stack[0]))
-print(postorder(stack[0]))
+sets = int(input())
+for _ in range(sets):
+    data = input()
+    stack = []
+    level = 0
+    for x in data:
+        if x == "(":
+            level += 1
+        elif x == ")":
+            level -= 1
+        elif x == ",":
+            continue
+        else:
+            while len(stack) > level:
+                stack.pop()
+            new_node = TreeNode(x)
+            if stack:
+                top = stack[-1]
+                if top.left == None:
+                    top.left = new_node
+                else:
+                    top.right = new_node
+            stack.append(new_node)
+    print(preorder(stack[0]))
+    print(inorder(stack[0]))
