@@ -1,4 +1,5 @@
 # http://cs101.openjudge.cn/practice/02775/
+# http://cs101.openjudge.cn/25dsapre/02775/
 
 
 class FolderNode:

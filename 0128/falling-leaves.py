@@ -1,4 +1,5 @@
 # http://cs101.openjudge.cn/practice/01577/
+# http://cs101.openjudge.cn/25dsapre/01577/
 
 from typing import List, Optional
 
@@ -23,10 +24,14 @@ def construct(lines: List[str]):
             pos = root
             while True:
                 if ch < pos.val:
-                    if not pos.left: pos.left = TreeNode(ch); break
+                    if not pos.left:
+                        pos.left = TreeNode(ch)
+                        break
                     pos = pos.left
                 elif ch > pos.val:
-                    if not pos.right: pos.right = TreeNode(ch); break
+                    if not pos.right:
+                        pos.right = TreeNode(ch)
+                        break
                     pos = pos.right
     return root
 
