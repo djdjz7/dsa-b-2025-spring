@@ -1,3 +1,6 @@
+# http://cs101.openjudge.cn/dsapre/02524/
+
+
 class DisjointSet:
     def __init__(self, size: int):
         self.size = size
