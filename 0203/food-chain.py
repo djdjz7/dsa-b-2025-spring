@@ -1,3 +1,5 @@
+# http://cs101.openjudge.cn/practice/01182
+
 n, k = map(int, input().split())
 rep = list(range(3 * n + 1))
 
