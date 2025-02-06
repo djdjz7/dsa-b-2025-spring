@@ -1,7 +1,7 @@
 ## cs201数算（计算机基础2）2025pre每日选做
 <mark>https://github.com/GMyhf/2025spring-cs201/blob/main/pre_problem_list_2025spring.md</mark>
 
-Updated 0002 GMT+8 Feb 5 2025.
+Updated 2212 GMT+8 Feb 5 2025.
 2025 winter, Complied by Hongfei Yan
 
 题解在：
@@ -14,6 +14,18 @@ Updated 0002 GMT+8 Feb 5 2025.
 
 | 日期 | 问题编号与名称  | 标签          | 难度 | 链接                                                 |
 | ---- | --------------- | ------------- | ---- | ---------------------------------------------------- |
+| 0210 |  | -  | - |    |
+| 0210 | 20C. Dijkstra? | graphs, shortest paths | 1900 | https://codeforces.com/problemset/problem/20/C   |
+| 0210 | 580C. Kefa and Park  | dfs and similar, graphs, trees | 1500 | https://codeforces.com/problemset/problem/580/C    |
+| 0209 |  | -  | - |    |
+| 0209 |  | OOP  | Miedium |    |
+| 0209 | 295.数据流的中位数  | OOP,heap  | Medium | https://leetcode.cn/problems/find-median-from-data-stream/   |
+| 0208 |  | -  | - |    |
+| 0208 | 2241.设计一个ATM机器  | OOP  | Medium | https://leetcode.cn/problems/design-an-atm-machine/    |
+| 0208 | 146.LRU缓存 | OOP,双向链表  | Medium | https://leetcode.cn/problems/lru-cache/   |
+| 0207 |  | -  | - |    |
+| 0207 | 208.实现Trie（前缀树） | OOP,dict  | Medium | https://leetcode.cn/problems/implement-trie-prefix-tree/    |
+| 0207 | 380.O(1)时间插入、删除和获取随机元素| OOP  | Medium | https://leetcode.cn/problems/insert-delete-getrandom-o1/    |
 | 0206 | 04123: 马走日 | -  | - | http://cs101.openjudge.cn/practice/04123   |
 | 0206 | sy379: 有向图的邻接表 | -  | - | https://sunnywhy.com/sfbj/10/2/379    |
 | 0206 | sy378: 无向图的邻接表 | -  | - | https://sunnywhy.com/sfbj/10/2/378   |
@@ -63,7 +75,7 @@ Updated 0002 GMT+8 Feb 5 2025.
 | 0123 | 3095.或值至少K的最短子数组I   | 滑动窗口 | - | https://leetcode.cn/problems/shortest-subarray-with-or-at-least-k-i/       |
 | 0122 | 04137: 最小新整数   | monotonous-stack  | - | http://cs101.openjudge.cn/25dsapre/04137/       |
 | 0122 | 27925: 小组队列   | queue  | - | http://cs101.openjudge.cn/practice/27925/       |
-| 0122 | 155.最小栈   | 辅助栈 | Medium | https://leetcode.cn/problems/min-stack/       |
+| 0122 | 155.最小栈   | OOP辅助栈 | Medium | https://leetcode.cn/problems/min-stack/       |
 | 0121 | 02299: Ultra-QuickSort   | merge sort  | Tough | http://cs101.openjudge.cn/25dsapre/02299/       |
 | 0121 | sy322: 跨步迷宫 | bfs    | Medium | https://sunnywhy.com/sfbj/8/2/322    |
 | 0121 | sy323: 字符迷宫 | bfs    | Medium | https://sunnywhy.com/sfbj/8/2/323    |
