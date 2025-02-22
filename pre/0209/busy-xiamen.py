@@ -5,16 +5,24 @@ from collections import defaultdict
 n, m = map(int, input().split())
 rep = [i for i in range(n)]
 i = -1
+
+
 def increase():
     global i
     i += 1
     return i
+
+
 def find(x):
     if rep[x] != x:
         rep[x] = find(rep[x])
     return rep[x]
+
+
 def union(x, y):
     rep[find(x)] = find(y)
+
+
 mapping = defaultdict(increase)
 edges = []
 for _ in range(m):

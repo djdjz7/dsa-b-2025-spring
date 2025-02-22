@@ -1,7 +1,7 @@
 ## cs201数算（计算机基础2）2025pre每日选做
 <mark>https://github.com/GMyhf/2025spring-cs201/blob/main/pre_problem_list_2025spring.md</mark>
 
-Updated 0914 GMT+8 Feb 9 2025.
+Updated 0011 GMT+8 Feb 16 2025.
 2025 winter, Complied by Hongfei Yan
 
 题解在：
@@ -14,24 +14,24 @@ Updated 0914 GMT+8 Feb 9 2025.
 
 | 日期 | 问题编号与名称  | 标签          | 难度 | 链接                                                 |
 | ---- | --------------- | ------------- | ---- | ---------------------------------------------------- |
-| 0216 |  | -  | - |    |
+| 0216 | 27018: 康托展开 | 线段树,树状数组  | tough | http://cs101.openjudge.cn/25dsapre/27018/    |
 | 0216 | 14.最长公共前缀 | Trie  | 必须会 | https://leetcode.cn/problems/longest-common-prefix/    |
-| 0215 |  | -  | - |    |
+| 0215 | 01961: 前缀中的周期 | KMP  | Tough | http://cs101.openjudge.cn/25dsapre/01961/    |
 | 0215 | 909.蛇梯棋 | bfs  | Medium | https://leetcode.cn/problems/snakes-and-ladders/    |
 | 0215 | 994.腐烂的橘子  | bfs  | Medium | https://leetcode.cn/problems/rotting-oranges/    |
-| 0214 | 20106:走山路 | Dijkstra  | 必须会 | http://cs101.openjudge.cn/practice/20106/    |
+| 0214 | 20106:走山路 | Dijkstra  | 必须会 | http://cs101.openjudge.cn/25dsapre/20106/    |
 | 0214 | 2920.收集所有金币可获得的最大积分 | tree dp  | Tough | https://leetcode.cn/problems/maximum-points-after-collecting-coins-from-all-nodes/    |
 | 0214 | 37.解数独 | backtracking  | Tough | https://leetcode.cn/problems/sudoku-solver/    |
-| 0213 | 04130: Saving Tang Monk | -  | Tough | http://cs101.openjudge.cn/practice/04130/    |
+| 0213 | 04130: Saving Tang Monk | -  | Tough | http://cs101.openjudge.cn/25dsapre/04130/    |
 | 0213 | 4.寻找两个正序数组的中位数 | 分治,二分查找  | Tough | https://leetcode.cn/problems/median-of-two-sorted-arrays/    |
 | 0213 | 23.合并K个升序链表 | 分治,归并排序  | Tough | https://leetcode.cn/problems/merge-k-sorted-lists/   |
-| 0212 | 03447: 银河贸易问题 | bfs  | - | http://cs101.openjudge.cn/practice/03447/    |
+| 0212 | 03447: 银河贸易问题 | bfs  | - | http://cs101.openjudge.cn/25dsapre/03447/    |
 | 0212 | 09202: 舰队、海域出击！ | Topological Order  | 必须会 | http://cs101.openjudge.cn/practice/09202/    |
-| 0212 | 05443: 兔子与樱花 | dijkstra  | 必须会 | http://cs101.openjudge.cn/practice/05443/   |
-| 0211 | 05442: 兔子与星空 | prim, kruskal  | 必须会 | http://cs101.openjudge.cn/practice/05442/   |
-| 0211 | 27635:判断无向图是否连通有无回路  | -  | - | http://cs101.openjudge.cn/practice/27635/    |
+| 0212 | P1260: 火星大工程| AOE，拓扑排序，关键路径  | Tough | http://dsbpython.openjudge.cn/dspythonbook/P1260/    |
+| 0211 | 05442: 兔子与星空 | prim, kruskal  | 必须会 | http://cs101.openjudge.cn/25dsapre/05442/   |
+| 0211 | 27635:判断无向图是否连通有无回路  | dfs,topological order  | 必须会 | http://cs101.openjudge.cn/practice/27635/    |
 | 0211 | 1843D. Apple Tree | combinatorics, dfs and similar, dp, math, trees  | 1200 | https://codeforces.com/problemset/problem/1843/D    |
-| 0210 | P1260: 火星大工程| AOE，拓扑排序，关键路径  | Tough | http://dsbpython.openjudge.cn/dspythonbook/P1260/    |
+| 0210 | 05443: 兔子与樱花 | dijkstra  | 必须会 | http://cs101.openjudge.cn/25dsapre/05443/   |
 | 0210 | 20C. Dijkstra? | graphs, shortest paths | 1900 | https://codeforces.com/problemset/problem/20/C   |
 | 0210 | 580C. Kefa and Park  | dfs and similar, graphs, trees | 1500 | https://codeforces.com/problemset/problem/580/C    |
 | 0209 | 27880: 繁忙的厦门 | MST,kruskal  | - | http://cs101.openjudge.cn/25dsapre/27880/    |
