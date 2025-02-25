@@ -6,6 +6,9 @@ from typing import List
 
 
 class Node:
+
+    __slots__ = ["val", "pending_deletion", "in_max_heap"]
+
     def __init__(self, val, in_max_heap):
         self.val = val
         self.pending_deletion = False
