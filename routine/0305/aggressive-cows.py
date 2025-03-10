@@ -3,6 +3,8 @@ stalls = []
 for _ in range(n):
     stalls.append(int(input()))
 stalls.sort()
+
+
 def validate(k):
     last = float("-inf")
     settled = 0
@@ -13,6 +15,8 @@ def validate(k):
             if settled >= c:
                 return True
     return False
+
+
 l = 0
 r = stalls[-1] // c + 1
 while l < r - 1:

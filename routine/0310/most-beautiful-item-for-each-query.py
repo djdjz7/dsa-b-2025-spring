@@ -2,6 +2,7 @@
 
 from typing import List
 
+
 class Solution:
     def maximumBeauty(self, items: List[List[int]], queries: List[int]) -> List[int]:
         items.sort()
@@ -25,6 +26,10 @@ class Solution:
                 ans[i] = max(m, max(map(lambda x: x[1], items[l1:l]))) if l > l1 else m
                 m = ans[i]
         return ans
-    
 
-print(Solution().maximumBeauty([[1,2],[3,2],[2,4],[5,6],[3,5]], [1,2,3,4,5,6]))
+
+print(
+    Solution().maximumBeauty(
+        [[1, 2], [3, 2], [2, 4], [5, 6], [3, 5]], [1, 2, 3, 4, 5, 6]
+    )
+)

@@ -17,15 +17,18 @@ class Node:
     def __lt__(self, other):
         return self.val < other.val
 
+
 current_queue = deque()
 min_heap = []
 max_heap = []
 min_size = 0
 max_size = 0
 
+
 def prune(heap: List[Node]):
     while heap and heap[0].pending_deletion:
         heapq.heappop(heap)
+
 
 def balance():
     global max_size, min_size
@@ -46,6 +49,7 @@ def balance():
         min_size -= 1
         prune(min_heap)
 
+
 def insert(val: int):
     global max_size, min_size
     if not min_heap or val < min_heap[0].val:
@@ -59,9 +63,15 @@ def insert(val: int):
     balance()
     return node
 
+
 def get_medium():
     global max_size, min_size
-    return -max_heap[0].val if max_size != min_size else (min_heap[0].val - max_heap[0].val) / 2
+    return (
+        -max_heap[0].val
+        if max_size != min_size
+        else (min_heap[0].val - max_heap[0].val) / 2
+    )
+
 
 n = int(input())
 for _ in range(n):

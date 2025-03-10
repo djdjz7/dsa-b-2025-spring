@@ -5,11 +5,11 @@ from collections import deque
 compressed = input()
 stack = []
 for ch in compressed:
-    if ch != ']':
+    if ch != "]":
         stack.append(ch)
     else:
         seg = deque()
-        while stack and stack[-1] != '[':
+        while stack and stack[-1] != "[":
             seg.appendleft(stack.pop())
         stack.pop()
         t = 0

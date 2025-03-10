@@ -7,10 +7,12 @@ while True:
         break
     case_cnt += 1
     rep = [i for i in range(n + 1)]
+
     def get_rep(i):
         if rep[i] != i:
             rep[i] = get_rep(rep[i])
         return rep[i]
+
     for _ in range(m):
         i, j = map(int, input().split())
         rep[get_rep(i)] = get_rep(j)

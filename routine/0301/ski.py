@@ -5,6 +5,7 @@ from functools import lru_cache
 r, c = map(int, input().split())
 h = [list(map(int, input().split())) for _ in range(r)]
 
+
 @lru_cache(10010)
 def ski(x, y):
     ans = 1
@@ -17,6 +18,7 @@ def ski(x, y):
     if y != c - 1 and h[x][y + 1] < h[x][y]:
         ans = max(ski(x, y + 1) + 1, ans)
     return ans
+
 
 ans = 0
 for i in range(r):

@@ -2,6 +2,7 @@
 
 from typing import List
 
+
 def merge_sort(l: int, r: int, arr: List[int]) -> int:
     if l == r - 1:
         return 0
@@ -24,6 +25,7 @@ def merge_sort(l: int, r: int, arr: List[int]) -> int:
     for i in range(r - l):
         arr[l + i] = temp[i]
     return ans
+
 
 while True:
     n = int(input())

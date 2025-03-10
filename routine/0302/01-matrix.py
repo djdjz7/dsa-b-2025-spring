@@ -2,6 +2,7 @@
 
 from typing import List
 
+
 class Solution:
     def updateMatrix(self, mat: List[List[int]]) -> List[List[int]]:
         row = len(mat)
@@ -11,7 +12,7 @@ class Solution:
             for j in range(col):
                 if mat[i][j] == 0:
                     ans[i][j] = 0
-                else: 
+                else:
                     if i - 1 >= 0:
                         ans[i][j] = min(ans[i][j], ans[i - 1][j] + 1)
                     if j - 1 >= 0:
@@ -23,5 +24,6 @@ class Solution:
                 if j + 1 < col:
                     ans[i][j] = min(ans[i][j], ans[i][j + 1] + 1)
         return ans
-    
+
+
 print(Solution().updateMatrix([[0, 1]]))
