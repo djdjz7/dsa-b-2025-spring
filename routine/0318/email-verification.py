@@ -1,6 +1,7 @@
 # http://cs101.openjudge.cn/2025sp_routine/04015
 
 import re
+
 pattern = re.compile(r"^[^@\.](?:[^@]*?[^@\.])?@[^@\.][^@]*?\.[^@]*?[^@\.]$")
 
 while True:

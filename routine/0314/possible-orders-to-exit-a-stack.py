@@ -2,6 +2,7 @@
 
 n = int(input())
 
+
 def enum(pending, stack, ans_seg):
     if pending > n and not stack:
         print(*ans_seg)
@@ -17,5 +18,6 @@ def enum(pending, stack, ans_seg):
         enum(pending, _stack, _ans_seg)
     stack.append(pending)
     enum(pending + 1, stack, ans_seg)
+
 
 enum(1, [], [])

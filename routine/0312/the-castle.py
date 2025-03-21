@@ -6,6 +6,7 @@ c = int(input())
 terran = [list(map(int, input().split())) for i in range(r)]
 visited = [[False] * c for _ in range(r)]
 
+
 def dfs(x, y):
     if visited[x][y]:
         return 0
@@ -20,6 +21,7 @@ def dfs(x, y):
     if not terran[x][y] & 8:
         size += dfs(x + 1, y)
     return size
+
 
 max_size = 0
 room_cnt = 0
