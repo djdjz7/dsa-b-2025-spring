@@ -2,6 +2,7 @@
 
 from collections import deque
 
+
 def find(n):
     current_state = deque([1])
     while True:

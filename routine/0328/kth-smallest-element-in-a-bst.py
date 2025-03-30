@@ -5,11 +5,14 @@ from typing import Optional, Tuple
 
 # Definition for a binary tree node.
 
+
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
         self.right = right
+
+
 class Solution:
     def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
         def find(root: Optional[TreeNode], base: int) -> Tuple[int, int | None]:
@@ -23,5 +26,6 @@ class Solution:
                 return base, root.val
             base, v = find(root.right, base)
             return base, v
+
         _, v = find(root, 0)
         return v

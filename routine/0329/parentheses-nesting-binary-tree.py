@@ -8,6 +8,7 @@ class TreeNode:
         self.left = None
         self.right = None
 
+
 def transform(data):
     stack = []
     push_cache = None
@@ -34,7 +35,7 @@ def transform(data):
 def preorder(root):
     return (
         ""
-        if not root or root.val == '*'
+        if not root or root.val == "*"
         else f"{root.val}{preorder(root.left)}{preorder(root.right)}"
     )
 
@@ -42,9 +43,10 @@ def preorder(root):
 def inorder(root):
     return (
         ""
-        if not root or root.val == '*'
+        if not root or root.val == "*"
         else f"{inorder(root.left)}{root.val}{inorder(root.right)}"
     )
+
 
 n = int(input())
 for _ in range(n):
