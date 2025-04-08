@@ -1,10 +1,12 @@
 # http://cs101.openjudge.cn/practice/27928/
 
+
 class Node:
     def __init__(self, val):
         self.val = val
         self.associated = [val]
         self.ref = False
+
 
 n = int(input())
 nodes = dict()
@@ -29,6 +31,7 @@ def traverse(root):
         else:
             result += traverse(nodes[n])
     return result
+
 
 root = filter(lambda x: not x.ref, nodes.values()).__next__()
 print(*traverse(root), sep="\n")
