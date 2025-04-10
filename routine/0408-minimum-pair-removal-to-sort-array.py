@@ -5,6 +5,8 @@ import heapq
 
 
 class Node:
+    __slots__ = ["val", "pos", "prev", "next", "dropped"]
+
     def __init__(self, val, pos):
         self.val = val
         self.pos = pos
@@ -14,6 +16,8 @@ class Node:
 
 
 class OrderingNode:
+    __slots__ = ["val", "pos", "l", "r"]
+
     def __init__(self, l: Node, r: Node):
         self.val = l.val + r.val
         self.pos = l.pos
