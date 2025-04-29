@@ -3,6 +3,7 @@
 from typing import List
 from collections import defaultdict
 
+
 class Solution:
     def countBadPairs(self, nums: List[int]) -> int:
         hs = defaultdict(int)
@@ -13,4 +14,4 @@ class Solution:
         for v in hs.values():
             ans -= v * (v - 1)
         # ignore the order, making sure i < j
-        return ans // 2 
+        return ans // 2

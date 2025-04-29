@@ -1,5 +1,6 @@
 # http://cs101.openjudge.cn/2025sp_routine/04078/
 
+
 class BinaryHeap:
     def __init__(self):
         self.arr = []

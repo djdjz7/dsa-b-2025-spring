@@ -2,12 +2,14 @@
 
 from typing import List
 
+
 class Solution:
     def largestIsland(self, grid: List[List[int]]) -> int:
         size = [0, 0]
         id = 2
         n = len(grid)
         DELTA = [(1, 0), (0, 1), (-1, 0), (0, -1)]
+
         def diffuse(x, y, id):
             grid[x][y] = id
             size = 1
@@ -17,6 +19,7 @@ class Solution:
                 if 0 <= xx < n and 0 <= yy < n and grid[xx][yy] == 1:
                     size += diffuse(xx, yy, id)
             return size
+
         max_size = 0
         for i in range(n):
             for j in range(n):
