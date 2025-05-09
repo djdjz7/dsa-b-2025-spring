@@ -7,7 +7,6 @@ sys.setrecursionlimit(40000)
 DELTA = [(-1, 0), (1, 0), (0, 1), (0, -1)]
 
 
-
 k = int(input())
 for _ in range(k):
     m, n = map(int, input().split())

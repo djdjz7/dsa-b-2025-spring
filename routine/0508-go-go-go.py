@@ -2,11 +2,13 @@
 
 from collections import deque
 
+
 class Target:
     def __init__(self):
         self.dep = []
         self.deg = 0
         self.ordered = False
+
 
 t = int(input())
 for _ in range(t):

@@ -18,5 +18,5 @@ class Solution:
         for q, i in nq:
             while bpp < len(bp) and bp[bpp] < q[0]:
                 bpp += 1
-            ans[i] = (bpp >= len(bp) or bp[bpp] >= q[1])
+            ans[i] = bpp >= len(bp) or bp[bpp] >= q[1]
         return ans
