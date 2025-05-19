@@ -6,6 +6,7 @@ import heapq
 INF = float("inf")
 DELTA = [(-1, 0), (1, 0), (0, 1), (0, -1)]
 
+
 class Solution:
     def minTimeToReach(self, moveTime: List[List[int]]) -> int:
         m = len(moveTime)

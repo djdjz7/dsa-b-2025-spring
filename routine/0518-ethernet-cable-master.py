@@ -9,8 +9,10 @@ if total_len < k:
     print("0.00")
     exit(0)
 
+
 def validate(p):
     return sum(map(lambda x: x // p, cables)) >= k
+
 
 l, r = 1, total_len // k + 1
 while l + 1 < r:
