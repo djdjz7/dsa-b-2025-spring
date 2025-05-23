@@ -3,6 +3,7 @@
 from typing import List
 import heapq
 
+
 class Solution:
     def maxRemoval(self, nums: List[int], queries: List[List[int]]) -> int:
         q_l = len(queries)
